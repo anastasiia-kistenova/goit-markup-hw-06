@@ -93,20 +93,34 @@
 
 
 .nav-links {
-    display: flex;
-    gap: 40px;
+    display: none;
     
 }
 
-.nav-address {
+.button-menu {
+border: transparent;
+background-color: transparent;
+fill: #2F2F37;
+
+}
+
+.icons-mob-menu {
     display: flex;
     gap: 40px;
 }
+
+.icons-soc-menu {
+    width: 40px;
+    height: 40px;
+}
+
+
+
 
 .page-header .navigation {
     display: flex;
     gap: 40px;
-    padding-left: 156px;
+
 }
 
 .name-company-link {
@@ -189,6 +203,14 @@ ul {
     margin: 0 auto;
 
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+.section-one {
+background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mob@2x.jpg);    
+}
+ }
 
 .section-one-title {
 
@@ -899,6 +921,14 @@ pointer-events: auto;
     
         }
 
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+     .section-one {
+         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet@2x.jpg);
+        }
+    }
+
 .item-advantages {
 width: calc((100% - 72px) / 4);
      }
@@ -921,6 +951,14 @@ width: calc((100% - 72px) / 4);
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
 
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .section-one {
+                background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office@2x.jpg);
+            }
+        }
 
      .item-advantages {
         width: calc((100% - 72px) / 4);
@@ -1052,6 +1090,12 @@ width: calc((100% - 72px) / 4);
     display: flex;
     align-items: baseline;
 
+}
+
+.page-header .navigation {
+    display: flex;
+    gap: 40px;
+    padding-left: 156px;
 }
 
 }
