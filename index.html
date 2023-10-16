@@ -23,107 +23,90 @@
   <body class="main-text">
     <header class="page-header">
       <div class="container">
-        <nav class="navigation">
-          <a href="/" class="name-company-link">
-            Web <span class="name-company"> Studio </span>
-          </a>
-          <ul class="nav-links">
-            <li><a class="link-one" href="./index.html">Studio</a></li>
-            <li><a class="link" href="">Portfolio</a></li>
-            <li><a class="link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="nav-links">
-            <li>
-              <a class="nav-address-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="nav-address-mail" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-        
-      </div>
-      <div class="mob-menu">
-
-<button type="button" class="button-menu">
+        <a href="/" class="name-company-link">
+          Web <span class="name-company"> Studio </span>
+        </a>
+        <button type="button" class="button-menu">
           <svg class="icon-menu" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu">
+        <nav class="navigation">
+          <button type="button" class="button-menu-close">
+            <svg class="icon-menu-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+            </svg>
+          </button>
 
-        <ul class="nav-links">
+          <ul class="nav-links">
             <li><a class="link-one" href="./index.html">Studio</a></li>
             <li><a class="link" href="">Portfolio</a></li>
             <li><a class="link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
-          <ul class="nav-links">
+          <ul class="nav-links-address">
+            <li>
+              <a class="nav-address-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
             <li>
               <a class="nav-address-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a class="nav-address-mail" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
           </ul>
+        </address>
 
-<ul class="icons-mob-menu">
-            <li class="icons-soc-menu">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="soc-link-footer"
-              >
-                <svg class="icon-soc-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-soc-menu">
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                class="soc-link-footer"
-              >
-                <svg class="icon-soc-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-soc-menu">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="soc-link-footer"
-              >
-                <svg class="icon-soc-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icons-soc-menu">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="soc-link-footer"
-              >
-                <svg class="icon-soc-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
+        <ul class="icons-mob-menu">
+          <li class="icons-soc-menu">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="soc-link-footer"
+            >
+              <svg class="icon-soc-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-soc-menu">
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              class="soc-link-footer"
+            >
+              <svg class="icon-soc-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-soc-menu">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="soc-link-footer"
+            >
+              <svg class="icon-soc-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-soc-menu">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="soc-link-footer"
+            >
+              <svg class="icon-soc-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -477,7 +460,10 @@
               <div class="picture-products">
                 <picture>
                   <source
-                    srcset="./images/cashless.jpg 1x, ./images/cashless@2x.jpg 2x"
+                    srcset="
+                      ./images/cashless.jpg    1x,
+                      ./images/cashless@2x.jpg 2x
+                    "
                     media="(min-width: 1400px)"
                   />
                   <source
@@ -495,12 +481,12 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  src="./images/cashless.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                />
+                    src="./images/cashless.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
                 </picture>
-                
+
                 <p class="text-product">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -516,7 +502,10 @@
               <div class="picture-products">
                 <picture>
                   <source
-                    srcset="./images/meditation.jpg 1x, ./images/meditation@2x.jpg 2x"
+                    srcset="
+                      ./images/meditation.jpg    1x,
+                      ./images/meditation@2x.jpg 2x
+                    "
                     media="(min-width: 1400px)"
                   />
                   <source
@@ -534,12 +523,12 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  src="./images/meditation.jpg"
-                  alt="Meditation App"
-                  width="360"
-                />
+                    src="./images/meditation.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
                 </picture>
-                
+
                 <p class="text-product">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -553,7 +542,7 @@
             </li>
             <li class="product-item">
               <div class="picture-products">
-                 <picture>
+                <picture>
                   <source
                     srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
                     media="(min-width: 1400px)"
@@ -572,10 +561,9 @@
                     "
                     media="(min-width: 320px)"
                   />
-                  <img src="./images/taxi.jpg" alt="Taxi Service" width="360"
-                />
+                  <img src="./images/taxi.jpg" alt="Taxi Service" width="360" />
                 </picture>
-                
+
                 <p class="text-product">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -590,8 +578,8 @@
 
             <li class="product-item">
               <div class="picture-products">
-
-                 <source
+                <picture>
+                  <source
                     srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
                     media="(min-width: 1400px)"
                   />
@@ -609,13 +597,13 @@
                     "
                     media="(min-width: 320px)"
                   />
-                   <img
-                  src="./images/screen.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                  <img
+                    src="./images/screen.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
                 </picture>
-               
+
                 <p class="text-product">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -629,7 +617,8 @@
             </li>
             <li class="product-item">
               <div class="picture-products">
-                 <source
+                <picture>
+                  <source
                     srcset="./images/courses.jpg 1x, ./images/courses@2x.jpg 2x"
                     media="(min-width: 1400px)"
                   />
@@ -648,12 +637,12 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  src="./images/courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                    src="./images/courses.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
                 </picture>
-                
+
                 <p class="text-product">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
