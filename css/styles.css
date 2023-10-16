@@ -202,11 +202,19 @@ display: inline-flex;
 background-color: #404BBF;
 }
 
-.nav-address .nav-address-mail:hover,
-.nav-address .nav-address-mail:focus,
-.nav-address .nav-address-mail:active {
+.address .nav-address-mail:hover,
+.address .nav-address-mail:focus,
+.address .nav-address-mail:active
+{
     color: #404BBF;
     
+}
+
+.address .nav-address-tell:hover,
+.address .nav-address-tell:focus,
+.address .nav-address-tell:active {
+    color: #404BBF;
+
 }
 
 .nav-address .nav-address-mail {
