@@ -108,6 +108,9 @@ max-width: 151px;
     background-color: #fff;
     z-index: 1;
     padding: 72px 153px 40px 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .button-menu {
@@ -481,6 +484,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 24px;
     letter-spacing: 0.32px;
     width: 288px;
+    padding-top: 17,5px;
 }
 
 .down-page {
@@ -504,6 +508,8 @@ color: #F4F4FD;
 
 .name-company-link-down {
 display: inline-block;
+display: flex;
+justify-content: center;
  margin-bottom: 16px;
 color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -516,13 +522,10 @@ color: #4D5AE5;
 }
 
 .container-footer {
-    
-max-width: 320px;
+max-width: 320px;  
+
 }
 
-.down-page .container-footer {
-    margin-right: 159px;
-}
 
 .logo-text-footer {
 margin-right: 16px;
@@ -538,11 +541,19 @@ margin-right: 16px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-soc {
+    padding-top: 72px;
+    
 }
 
 .icons-footer {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .icons-soc-footer {
@@ -579,6 +590,17 @@ background-color: #31d0aa;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom {
+    padding-top: 72px;
+}
+
+.footer-bottom-lable {
+    display: flex;
+    justify-content: center;
 }
 
 .input-footer {
@@ -594,6 +616,8 @@ background-color: #31d0aa;
     line-height: 1.5;
     letter-spacing: 0.04em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    opacity: 0.3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .input-footer::placeholder {
@@ -604,10 +628,7 @@ line-height: 24px;
 letter-spacing: 0.48px;
 }
 
-.footer-bottom {
-    margin-left: 120px;
-   
-}
+
 
 .footer-btn {
     border-radius: 4px;
@@ -623,12 +644,13 @@ letter-spacing: 0.48px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-        cursor: pointer;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        min-width: 165px;
-        height: 40px;
-        border: none;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 16px 78px 0 77px;
 }
 
 .footer-btn:hover,
@@ -644,9 +666,9 @@ letter-spacing: 0.48px;
 
 
 .footer-form {
-    display: flex;
-    gap: 24px;
-    align-items: center;
+    display: block;
+    
+  
 }
 
 
@@ -960,7 +982,7 @@ color: #4D5AE5;
 .modal-check:checked + .check-text > .check-text-box  {
     background-color: #404bbf;
     border: none;
-    fill: #F4F4FD;
+    fill: #F4F4FD; 
     width: 16px;
 }
 
@@ -1209,6 +1231,65 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-bottom {
+    margin-left: 120px;
+
+}
+
+.down-page .container-footer {
+    margin-right: 159px;
+}
+
+.name-company-link-down {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #4D5AE5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.icons-footer {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-bottom-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-btn {
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 16px 78px 0 77px;
 }
 
 }
