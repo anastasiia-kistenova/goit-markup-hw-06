@@ -60,15 +60,15 @@ a {
 .page-header {
     background-color: #FFF;
     border-bottom: 1px solid #E7E9FC;
-    padding: 24px 0;
+    padding: 17.5px 0;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
 
 }
 
 .page-header .container {
     display: flex;
     justify-content: space-between;
+    
     
 }
 
@@ -96,6 +96,7 @@ max-width: 151px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+
     
 }
 
@@ -107,7 +108,7 @@ max-width: 151px;
     left: 0;
     background-color: #fff;
     z-index: 1;
-    padding: 72px 153px 40px 16px;
+    padding: 72px 111px 40px 16px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -232,7 +233,7 @@ display: none;
 
   /* скрыто */
 
-.nav-address .nav-address-mail-mob {
+.nav-address-mail-mob {
     color: #434455;
     font-size: 20px;
     line-height: 24px;
@@ -240,9 +241,10 @@ display: none;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: Roboto;
+    font-style: normal;
 }
 
-.nav-address .nav-address-tel-mob {
+.nav-address-tel-mob {
     font-size: 20px;
     color: #4D5AE5;
     line-height: 24px;
@@ -250,6 +252,7 @@ display: none;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: Roboto;
+    font-style: normal;
 }
 
 ul {
@@ -574,8 +577,8 @@ margin-right: 16px;
 }
 
 .soc-link-mob {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
@@ -1095,6 +1098,7 @@ pointer-events: auto;
     flex-wrap: wrap;
    gap: 12px;
     padding-left: 122px;
+    
 }
 
 
@@ -1236,12 +1240,18 @@ display: flex;
 
 .footer-btn {
     margin-top: 0;
+    margin-left: 24px;
 }
 
 .button-menu {
+    
     display: none;
 }
 
+
+.logo-text-footer {
+    margin: 0;
+}
 
 }
 
@@ -1259,20 +1269,12 @@ display: flex;
     }
 
 
-
-
-
-
-
  .page-header {
 max-height: 72px;
 display: flex;
 align-items: center;
 
 }
-
-
-
 
         .nav-links .link-one::after {
             content: '';
